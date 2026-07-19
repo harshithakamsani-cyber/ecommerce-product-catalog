@@ -62,4 +62,13 @@ searchInput.addEventListener("input", () => {
 
   displayProducts(filteredProducts);
 });
-   
+  function filterProducts(category) {
+  if (category === "All") {
+    displayProducts(products);
+  } else {
+    const filtered = products.filter(product =>
+      product.category === category
+    );
+    displayProducts(filtered);
+  }
+  } 
