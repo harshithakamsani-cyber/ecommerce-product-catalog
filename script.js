@@ -36,6 +36,30 @@ const searchInput = document.getElementById("search");
 
 function displayProducts(list) {
   productsContainer.innerHTML = "";
+list.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "product-card";
 
-  list.forEach(product => {
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.category}</p>
+      <p>${product.price}</p>
+    `;
+
+    productsContainer.appendChild(card);
+  });
+}
+
+displayProducts(products);
+
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase();
+
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(value)
+  );
+
+  displayProducts(filteredProducts);
+});
    
