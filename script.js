@@ -3,31 +3,31 @@ const products = [
     name: "Wireless Headphones",
     category: "Electronics",
     price: "₹2,999",
-    image: "https://picsum.photos/300/200?random=1"
+    image: "headphones.jpg"
   },
   {
     name: "T-Shirt",
     category: "Clothing",
     price: "₹799",
-    image: "https://picsum.photos/300/200?random=2"
+    image: "t-shirt.jpg"
   },
   {
     name: "JavaScript Book",
     category: "Books",
     price: "₹499",
-    image: "https://picsum.photos/300/200?random=3"
+    image: "JavaScript-book.jpg"
   },
   {
     name: "Smart Watch",
     category: "Electronics",
     price: "₹4,999",
-    image: "https://picsum.photos/300/200?random=4"
+    image: "smartwatch.jpg"
   },
   {
     name: "Jeans",
     category: "Clothing",
     price: "₹1,299",
-    image: "https://picsum.photos/300/200?random=5"
+    image: "Jeans.jpg"
   }
 ];
 
